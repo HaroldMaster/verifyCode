@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CodeGeneratorService } from './services/code-generator.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'verifyCode';
+  codeGen: any;
+  constructor(private codeGeneratorService : CodeGeneratorService){
+  }
+  
+  codeGenerator(){
+    this.codeGen= this.codeGeneratorService.generateRandomNumber();
+    return this.codeGen;
+  }
 }

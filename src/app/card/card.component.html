@@ -1,0 +1,19 @@
+<div class='card'>
+    <h1 class="card__title">Verify your email address</h1>
+    <p class="card__description">We emailed you a six-digit code to arthur@email.com. Enter the code below to confirm your email address.</p>
+    <div class="number-container"> 
+        <app-number-input></app-number-input>
+    </div>
+    <button class="card__confirmation" (click)="compareCode()">Send</button>
+    <div class="respond">
+        <div class="respond__true" id="success">
+            <div class="respond__true__img"></div>
+        </div>
+        <div class="respond__false" id="deny">
+            <div class="respond__false__img"></div>
+        </div>
+    </div>
+    <p class="card__footer">
+        Make sure to keep this window open while check your inbox. Resend code
+    </p>
+</div>

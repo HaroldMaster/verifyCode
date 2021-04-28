@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import '/src/assets/styles/base/base';
+@import '/src/assets/styles/base/animations';
+@import '/src/assets/styles/abstract/variables';
+@import '/src/assets/styles/components/card';
+@import '/src/assets/styles/components/number';
+@import '/src/assets/styles/components/code-generator';
