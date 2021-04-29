@@ -4,15 +4,18 @@
     <div class="number-container"> 
         <app-number-input class="test-number" (boxChange)="changeBox($event)" (boxFocus)="focusBox($event)"></app-number-input>
     </div>
-    <button class="card__confirmation" (click)="clickBox()">Send</button>
-    <div class="respond">
-        <div class="respond__true" id="success">
-            <div class="respond__true__img"></div>
-        </div>
-        <div class="respond__false" id="deny">
-            <div class="respond__false__img"></div>
+    <div class="confirmation-container">
+        <button class="card__confirmation" (click)="clickBox()">Send</button>
+        <div class="respond">
+            <div class="respond__true" id="success">
+                <div class="respond__true__img"></div>
+            </div>
+            <div class="respond__false" id="deny">
+                <div class="respond__false__img"></div>
+            </div>
         </div>
     </div>
+    
     <p class="card__footer">
         Make sure to keep this window open while check your inbox. Resend code
     </p>
