@@ -1,4 +1,7 @@
 <div class="main-container">
-    <app-code-generator (buttonClick)="codeGenerator()"  [code]="codeGen"></app-code-generator>
-    <app-card [code]="codeGen"></app-card>
+    <app-code-generator (buttonClick)="codeGenerator()"  
+         [code]="codeGen"
+        >
+    </app-code-generator>
+    <app-card (boxChange)="change($event)" (boxFocus)="focus($event)" (clickSend)="send($event)"  [code]="codeGen"></app-card>
 </div>

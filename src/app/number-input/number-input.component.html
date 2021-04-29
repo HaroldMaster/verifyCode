@@ -1,9 +1,10 @@
 <div class="number-container__box">
     <form name="sampleform" method="post">
-        <input  class="number" id="number__1" placeholder="2"  maxlength=1 (focus)="replaceWhenValue('number__1')" (input)="onInputEntry($event,'number__',(1))">
-        <input  class="number" id="number__2" placeholder="8" maxlength=1 (focus)="replaceWhenValue('number__2')" (input)="onInputEntry($event,'number__',(2))">
-        <input  class="number" id="number__3"  placeholder="0" maxlength=1 (focus)="replaceWhenValue('number__3')" (input)="onInputEntry($event,'number__',(3))">
-        <input  class="number" id="number__4"  placeholder="0" maxlength=1 (focus)="replaceWhenValue('number__4')" (input)="onInputEntry($event,'number__',(4))"> 
+        <input  class="number" id="number__1" placeholder="2"  maxlength=1 (focus)="emitFocusBox('number__1')" (input)="emitChangeBox($event,'number__1')">
+        <input  class="number" id="number__2" placeholder="8" maxlength=1 (focus)="emitFocusBox('number__2')" (input)="emitChangeBox($event, 'number__2')">
+        <input  class="number" id="number__3"  placeholder="0" maxlength=1 (focus)="emitFocusBox('number__3')" (input)="emitChangeBox($event,'number__3')">
+        <input  class="number" id="number__4"  placeholder="0" maxlength=1 (focus)="emitFocusBox('number__4')" (input)="emitChangeBox($event, 'number__4')"> 
     </form>  
 </div>
+ 
 

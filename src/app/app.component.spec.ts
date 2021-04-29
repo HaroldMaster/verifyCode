@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { CodeGeneratorService } from './services/code-generator.service';
+import { VerifyCodeService } from './services/verify-code.service';
 
 describe('AppComponent', () => {
   let fixture: ComponentFixture<AppComponent>;
@@ -11,6 +13,10 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [
+        CodeGeneratorService,
+        VerifyCodeService
+      ]
     }).compileComponents();
      fixture = TestBed.createComponent(AppComponent);
      component = fixture.componentInstance;

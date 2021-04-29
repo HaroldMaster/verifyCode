@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
 import { CardComponent } from './card.component';
 
@@ -21,5 +22,15 @@ describe('CardComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+  it('should emmit an event when click send', () => {
+    //given
+    const button = fixture.debugElement.query(By.css('.card__confirmation'));
+    const buttonClickSpy = spyOn(component.clickSend, 'emit');
+    //when
+    button.nativeElement.click();
+    //expect
+    expect(buttonClickSpy).toHaveBeenCalled();
+
   });
 });

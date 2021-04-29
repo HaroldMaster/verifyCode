@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CodeGeneratorService } from './code-generator.service';
+import { CodeGeneratorService } from './services/code-generator.service';
 
 describe('CodeGeneratorService', () => {
   let service: CodeGeneratorService;

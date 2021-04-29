@@ -2,9 +2,9 @@
     <h1 class="card__title">Verify your email address</h1>
     <p class="card__description">We emailed you a six-digit code to arthur@email.com. Enter the code below to confirm your email address.</p>
     <div class="number-container"> 
-        <app-number-input></app-number-input>
+        <app-number-input (boxChange)="changeBox($event)" (boxFocus)="focusBox($event)"></app-number-input>
     </div>
-    <button class="card__confirmation" (click)="compareCode()">Send</button>
+    <button class="card__confirmation" (click)="clickBox()">Send</button>
     <div class="respond">
         <div class="respond__true" id="success">
             <div class="respond__true__img"></div>

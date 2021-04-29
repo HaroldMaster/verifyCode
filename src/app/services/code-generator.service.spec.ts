@@ -18,7 +18,6 @@ describe('CodeGeneratorService', () => {
     //when
     let randomCode = service.generateRandomNumber()+'';
     //expect
-    console.log(randomCode);
     expect(randomCode.length).toEqual(4);
   });
 });
