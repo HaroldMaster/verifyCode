@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Calculator Deploy
+name: Verify Code Deploy
 
 # Controls when the action will run. 
 on:
@@ -36,5 +36,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
-         publish_dir: ./dist/verifyCode
+         publish_dir: ./dist/verify-code
 

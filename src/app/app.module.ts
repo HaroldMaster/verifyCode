@@ -17,6 +17,12 @@ import { CodeGeneratorComponent } from './code-generator/code-generator.componen
     BrowserModule
   ],
   providers: [],
+  exports: [
+    AppComponent,
+    CardComponent,
+    NumberInputComponent,
+    CodeGeneratorComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
