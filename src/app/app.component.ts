@@ -23,8 +23,6 @@ export class AppComponent {
   }
 
   focus(event: any){
-    console.log('focus service', event)
-    //this.verifyCodeService.onInputEntry(event, this.numberId);
     this.verifyCodeService.replaceWhenValue(event);
   }
   change(event:any){
