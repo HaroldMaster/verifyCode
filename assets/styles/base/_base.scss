@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before{
+    margin: 0; 
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    //Define cuanto vale 1 rem en este caso 10px
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+    @media only screen and (max-width: 56.25rem) { 
+        font-size: 40.5%;
+     };
+     @media only screen and (max-width: 37.5em) { 
+        font-size: 35.5%;
+     };
+}
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
